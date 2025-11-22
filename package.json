@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17"
+  },
+  "name": "urlnview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^4.1.17"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "script":{
+    "watch:css": "npx @tailwindcss/cli -i ./project/static/src/style.css -o ./project/static/dist/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
