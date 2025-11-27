@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from .models import Teacher
 
 # Demo credentials
 VALID_USERNAME = 'David'
@@ -40,3 +41,8 @@ def logout(request):
     request.session.flush()
     messages.info(request, "You have been logged out.")
     return redirect('login')
+
+
+def show_teacher(request):
+    teachers = Teacher.objects.all()
+    return render(request, 'teacher.html', {'teachers': teachers})
